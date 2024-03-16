@@ -1,0 +1,160 @@
+body {
+    background-image: url("img/bg1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.title img{
+    width: 700px;
+    padding-top: 250px;
+}
+
+.title2 {
+position: absolute;
+ display: block;   
+}
+
+.title2 img {
+   
+    display: block;
+    float: center;
+    margin-left: 50px;
+    padding-top: 60px;
+
+} 
+
+
+.games {
+   
+    margin-top: 200px;
+    display: inline-block;
+    list-style: none;
+}
+
+.games li{
+    display: inline-block;
+}
+
+.bottom{
+    margin-top: 100px;
+}
+
+.bottom p{
+    padding-left: 30px;
+    margin-bottom: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: gray
+
+}
+
+
+ 
+.games .btn1, .btn3 {
+    background-image: url("img/plaltformercover.png");
+    background-size: cover;
+    width: 240px;
+    height: 90px;
+    border-radius: 30px;
+    margin-right: 40px;
+
+    box-shadow: 0 9px palevioletred;
+
+
+}
+
+.games .btn2 {
+    background-image: url("img/plaltformercover.png");
+    background-size: cover;
+    width: 250px;
+    height: 90px;
+    border-radius: 30px;
+
+    box-shadow: 0 9px palevioletred;
+
+}
+
+.games #flappy {
+    background-image: url("img/flappyBirdCover1.jpg");
+    background-size: cover;
+
+    box-shadow: 0 9px rgb(170, 91, 91);
+}
+
+#pacman {
+    background-image: url("img/pacman.jpeg");
+    background-size: cover;
+
+    box-shadow: 0 9px rgb(27, 34, 71);
+}
+
+.games .btn2, .btn1, .btn3{
+    filter: grayscale(0%);
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+
+  filter: brightness(80%);
+  box-shadow: 0 5px rgb(168, 82, 111);
+  transform: translateY(4px);
+}
+
+#flappy:hover {
+    filter: brightness(80%);
+  box-shadow: 0 5px rgb(108, 51, 51);
+  transform: translateY(4px);
+}
+
+#pacman:hover{
+    filter: brightness(80%);
+  box-shadow: 0 5px rgb(36, 33, 74);
+  transform: translateY(4px);
+}
+
+#leaderboard:hover {
+    filter:brightness(80%);
+    box-shadow: 0 5px rgb(19, 4, 26);
+    transform: translateY(4px);
+}
+
+#leaderboard{
+    width: 240px;
+    background-image: url("img/leaderboard.jpg");
+    background-size: cover;
+
+    box-shadow: 0 9px rgb(27, 34, 71);
+}
+
+.btn1:after, .btn2:after, .btn3:after {
+
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    border-radius: 20px;
+    
+   
+}
+
+.btn1:hover:after, .btn2:hover:after, .btn3:hover:after {
+    padding: 30px;
+    width: 90%;
+    
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
+}

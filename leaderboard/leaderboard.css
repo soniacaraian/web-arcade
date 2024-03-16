@@ -1,0 +1,169 @@
+body {
+    background-image: url("../img/bg1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.games {
+    width: 200px;
+}
+
+.title {
+    position: absolute;
+     display: block;   
+    }
+    
+.title img {
+       
+    width: 900px;
+    margin-left: 100px;
+    padding-top: 100px;
+    
+} 
+
+th {
+    border: none;
+    text-align: center;
+    color: rgb(255, 99, 255);
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+tr {
+    border: none;
+    margin-top: 500px;
+    margin-left: 450px;
+    float: center;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+}
+
+table{
+    border: none;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 320px;
+    text-align: center;
+}
+
+td {
+    border: none;
+    margin-left: 300px;
+    margin-top: 300px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+}
+
+#rand1{
+    color:aqua;
+    font-size: 25px;
+}
+
+#rand2{
+    color:rgb(253, 255, 137);    
+    font-size: 25px;
+
+}
+#rand3{
+    color:rgb(167, 255, 154);
+    font-size: 25px;
+}
+
+#rand4{
+   
+    color:rgb(226, 91, 33);
+    font-size: 25px;
+}
+
+#rand5{
+    color:rgb(255, 124, 231);
+    font-size: 25px;
+
+}
+
+#rand6 {
+    color: pink;
+    font-size: 25px;
+}
+
+.games .btn1, .btn3 {
+    background-image: url("../img/plaltformercover.png");
+    background-size: cover;
+    width: 240px;
+    height: 90px;
+    border-radius: 30px;
+    margin-right: 40px;
+
+    margin-top: 650px;
+
+    box-shadow: 0 9px palevioletred;
+    position: absolute;
+
+    float: center;
+
+}
+
+#pacman {
+    background-image: url("../img/pacman.jpeg");
+    background-size: cover;
+
+    margin-left: 920px;
+    box-shadow: 0 9px rgb(27, 34, 71);
+}
+
+.games .btn3 {
+    margin-left: 420px;
+}
+
+.games .btn1{
+    filter: grayscale(100%);
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+
+  filter: brightness(100%);
+  box-shadow: 0 5px rgb(168, 82, 111);
+  transform: translateY(4px);
+}
+
+#pacman:hover{
+    filter: brightness(80%);
+  box-shadow: 0 5px rgb(36, 33, 74);
+  transform: translateY(4px);
+}
+
+.btn1:after, .btn2:after, .btn3:after {
+
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    border-radius: 20px;
+    
+   
+}
+
+.btn1:hover:after, .btn2:hover:after, .btn3:hover:after {
+    padding: 30px;
+    width: 90%;
+    
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
+}
